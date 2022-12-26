@@ -1,0 +1,47 @@
+.wrapper-comment-form {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 45px;
+    border-top: 1px solid #e5e6e9;
+    > h4 {
+        margin-bottom: 40px;
+        span {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+    }
+
+    .group-input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+
+        @media (max-width: 575px) {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+        .bulkhead {
+            height: 100%;
+            margin: 0 16px;
+            @media (max-width: 575px) {
+                display: none;
+            }
+        }
+        .input {
+            flex: 1;
+            @media (max-width: 575px) {
+                flex: none;
+                width: 100%;
+            }
+        }
+    }
+    .submit-btn {
+        width: 240px;
+        margin-top: 25px;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,15 @@
+.wrapper-socialIcon {
+    > li {
+        display: inline-block;
+        margin-right: 14px;
+        > a {
+            display: block;
+
+            color: #999;
+            transition: 0.3s linear;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}

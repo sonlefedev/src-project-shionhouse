@@ -1,0 +1,42 @@
+.go-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+    @media (max-width: 575px) {
+        bottom: 25px;
+        right: 15px;
+    }
+    border-radius: 50%;
+    border: none;
+
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    font-weight: 900;
+
+    .icon {
+        font-size: 30px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 10px 3px rgb(108 98 98 / 20%);
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 19px 3px rgb(108 98 98 / 20%);
+    }
+
+    transition: all 0.3s ease;
+    color: #fff;
+
+    background-color: var(--primary-color);
+
+    width: 46px;
+    height: 46px;
+}

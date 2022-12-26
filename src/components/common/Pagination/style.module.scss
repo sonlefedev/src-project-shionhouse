@@ -1,0 +1,39 @@
+.wrapper-pagination {
+    width: 100%;
+    margin-top: 80px;
+    @media (max-width: 575px) {
+        margin-bottom: 20px;
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        > li {
+            &:first-child {
+                margin-left: 0;
+            }
+            margin-left: 10px;
+            &.active {
+                background-color: #f3f0fb;
+                font-weight: 500;
+            }
+            &:hover {
+                color: #8a8a8a;
+            }
+            .icon {
+                font-size: 24px;
+            }
+            color: #888;
+            width: 100%;
+            height: 100%;
+
+            border: 1px solid #f0e9ff;
+            background-color: #fbf9ff;
+            width: 54px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

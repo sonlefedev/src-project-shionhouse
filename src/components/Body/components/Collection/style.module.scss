@@ -1,0 +1,7 @@
+.collection-wrapper {
+    .hero-h1 {
+        @media (max-width: 575px) {
+            font-size: 26px !important;
+        }
+    }
+}

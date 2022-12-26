@@ -1,0 +1,13 @@
+@import url('../../../style/button/button.module.scss');
+.wrapper-category {
+    .clear-btn {
+        height: 45px;
+        background: #fff;
+        border-radius: 5px;
+        padding: 4px;
+        color: #616875;
+        border: 1px solid #ededed;
+        width: 60px;
+        cursor: pointer;
+    }
+}

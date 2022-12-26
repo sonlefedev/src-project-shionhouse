@@ -1,0 +1,47 @@
+@use '../.././style/BreakPoint/_BreakPoint';
+.default-layout {
+    width: var(--width-header);
+
+    max-width: 96%;
+    margin: 0 30px;
+    @include BreakPoint.phones {
+        margin: 0;
+    }
+    .layout-item {
+        width: 100%;
+
+        &.Header {
+            z-index: 99;
+            transition: all 0.3s ease;
+
+            padding: 0 35px;
+            @include BreakPoint.phones {
+                padding: 0 10px;
+            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            display: flex;
+            justify-content: center;
+
+            &.onScroll {
+                -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+                box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+
+                background-color: #fff;
+            }
+        }
+        &.Slider {
+            margin-top: 88px;
+            z-index: 1;
+            @media (max-width: 1167px) {
+                margin-top: var(--height-header-mobile);
+            }
+        }
+        &.Navigation {
+            display: none;
+        }
+    }
+}

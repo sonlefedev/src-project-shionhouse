@@ -1,0 +1,97 @@
+// @import '../../../../style/effectAppear/effectAppear.module.scss';
+
+.wp-menu {
+    margin-left: 60px;
+    .list-menu {
+        display: flex;
+        align-items: center;
+        > &.sub_1 {
+            > .menu-arrow {
+                position: absolute;
+                left: 20px;
+                top: -16px;
+                font-size: 20px;
+
+                .icon {
+                    color: var(--primary-color);
+                }
+            }
+
+            pointer-events: none;
+            opacity: 0;
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 90%;
+            padding: 17px 0;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 170px;
+            box-shadow: 0 0 10px 3px rgb(0 0 0 / 5%);
+            background-color: #fff;
+
+            border-radius: 4px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-top: 4px solid var(--primary-color);
+            z-index: 99;
+
+            transition: all 0.3s ease;
+            > .item-menu {
+                width: 100%;
+                transition: all 0.3s ease;
+                &:hover {
+                    transform: translateX(5px);
+                }
+                > p,
+                > a {
+                    text-transform: capitalize;
+                    padding: 6px 10px;
+                    padding-left: 14px;
+                }
+            }
+        }
+        > .item-menu {
+            > .item-content {
+                display: flex !important;
+                align-items: center;
+            }
+            &:hover > .sub_1 {
+                opacity: 1;
+                pointer-events: visible;
+                top: 100%;
+            }
+            &:hover p,
+            &:hover .icon-more,
+            &:hover > a {
+                color: var(--primary-color) !important;
+            }
+            .icon-more {
+                transition: all 0.3s ease;
+            }
+            position: relative;
+            > .item-content,
+            > p,
+            > a {
+                display: block;
+                padding: 35px 20px;
+                transition: all 0.4s linear;
+                text-transform: uppercase;
+                color: #1d2547;
+                font-weight: 600;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .item-content {
+                > p {
+                    font-weight: 600;
+                    color: #1d2547;
+                    transition: all 0.3s ease;
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    transform: translateY(0.5px);
+                }
+            }
+        }
+    }
+}

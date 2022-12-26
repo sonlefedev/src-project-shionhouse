@@ -1,0 +1,23 @@
+.wrapper-quote {
+    padding: 30px;
+
+    background: rgba(130, 139, 178, 0.1);
+    line-height: 1.733;
+    color: #888;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .container {
+        padding: 25px 25px 25px 30px;
+
+        background: #fff;
+        padding: 15px 15px 15px 20px;
+        border-left: 1px solid #ccc;
+
+        p {
+            line-height: 1.733;
+            color: #888;
+            font-style: italic;
+        }
+    }
+}

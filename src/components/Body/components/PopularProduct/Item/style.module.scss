@@ -1,0 +1,44 @@
+.wrapper-item {
+    position: relative;
+    width: calc(50% - 10px);
+    overflow: hidden;
+    @media (max-width: 548px) {
+        width: 100%;
+        margin: auto;
+    }
+    &:hover {
+        > img {
+            transform: scale(1.1);
+        }
+    }
+    .detail-description {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        bottom: 15%;
+        > a {
+            font-size: 34px;
+            display: block;
+            line-height: 44px;
+            margin-bottom: 25px;
+            font-family: 'Poppins', sans-serif;
+
+            font-weight: 400;
+            color: #fff;
+
+            @media (max-width: 548px) {
+                font-size: 19px;
+                line-height: 25px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+    img {
+        width: calc(100%);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}

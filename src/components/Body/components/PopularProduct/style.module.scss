@@ -1,0 +1,15 @@
+.wrapper-popular-product {
+    padding-top: 50px;
+    @media (max-width: 548px) {
+    }
+    max-width: 100%;
+
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+    }
+}

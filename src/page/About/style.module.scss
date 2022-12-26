@@ -1,0 +1,10 @@
+.container-body-about_page {
+    margin-top: var(--height-header);
+    max-width: var(--width-header);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

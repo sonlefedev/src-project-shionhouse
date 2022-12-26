@@ -1,0 +1,81 @@
+.wrapper {
+    max-width: 200px;
+    .beauty-selection {
+        display: block;
+        position: relative; // Bắt buộc phải có cái này mới dùng đc z-index. Hoặc fixed, hoặc sticky
+        z-index: 1; // sai trầm trọng
+        &.open .icon {
+            transform: rotate(180deg);
+        }
+        &.open .wrapper-list-option {
+            border: 1px solid #ededed;
+            height: 200px;
+            pointer-events: auto;
+        }
+        .current {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            height: 45px;
+            background: #fff;
+            border-radius: 5px;
+            padding: 11px 19px 11px 18px;
+            color: #616875;
+            line-height: 20px;
+            border: 1px solid #ededed;
+            margin-bottom: 20px;
+            width: 100%;
+            cursor: pointer;
+            > span {
+                color: #616875;
+                line-height: 20px;
+                user-select: none;
+                font-size: 14px;
+
+                white-space: nowrap;
+            }
+            .icon {
+                font-size: 25px;
+                transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+        }
+        .wrapper-list-option {
+            background: #fff;
+            height: 0px;
+            overflow-y: scroll;
+            border-radius: 5px;
+            pointer-events: none;
+            z-index: 1;
+            margin-bottom: 20px;
+            &::-webkit-scrollbar {
+                width: 3px;
+                border-radius: 10px;
+                background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.72, rgb(243, 243, 243)));
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #ccc;
+            }
+            &,
+            .list-option {
+                transition: all 0.3s ease;
+            }
+        }
+        .list-option {
+            width: 100%;
+            > li {
+                &.active {
+                    background-color: #f6f6f6;
+                }
+                &:hover {
+                    background-color: #f6f6f6;
+                }
+                line-height: 32px;
+                text-align: left;
+                padding: 8px 16px;
+                cursor: pointer;
+                transition: all 0.2s linear;
+            }
+        }
+    }
+}

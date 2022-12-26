@@ -1,0 +1,42 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@mixin phones {
+    @media (max-width: calc($sm - 1px)) {
+        @content;
+    }
+}
+
+@mixin landscape_phones {
+    @media (min-width: $sm) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media (min-width: $md) {
+        @content;
+    }
+}
+
+@mixin desktops {
+    @media (min-width: $lg) {
+        @content;
+    }
+}
+
+@mixin large_desktops {
+    @media (min-width: $xl) {
+        @content;
+    }
+}
+
+@mixin larger_desktops {
+    @media (min-width: $xl) {
+        @content;
+    }
+}

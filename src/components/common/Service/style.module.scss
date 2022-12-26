@@ -1,0 +1,90 @@
+.wrapper-service {
+    background-color: #f7f7fd;
+    padding: 130px 20px;
+    position: relative;
+    .list-service {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .item-service {
+            min-width: 230px;
+            width: 25%;
+            padding: 0 15px;
+            .wrapper-icon {
+                .icon {
+                    --size: 45px;
+                    width: var(--size);
+                    height: var(--size);
+                    margin-right: auto;
+
+                    > img {
+                        width: 100%;
+                    }
+                }
+                margin-bottom: 26px;
+            }
+            h5 {
+                font-size: 17px;
+
+                font-weight: 500;
+                margin-bottom: 12px;
+                display: block;
+                text-transform: capitalize;
+                color: #2b2b2b;
+                font-family: 'Poppins', sans-serif;
+                line-height: 1.2;
+            }
+            p {
+                color: #57667e;
+                font-size: 16px;
+
+                margin-bottom: 15px;
+                font-weight: normal;
+                line-height: 1.4;
+
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .left {
+        left: 0px;
+    }
+
+    .right {
+        right: 0px;
+    }
+    .left,
+    .right {
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            transform: translateY(calc(-50% - 2px));
+            box-shadow: rgb(99 99 99 / 14%) 0px 2px 8px 0px;
+        }
+
+        --size: 34px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.856);
+
+        width: var(--size);
+        height: var(--size);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        .icon {
+            font-size: 30px;
+        }
+    }
+}

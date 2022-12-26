@@ -1,0 +1,49 @@
+.reset-btn {
+    cursor: pointer;
+    outline: none;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+
+    padding: 5px 10px;
+
+    min-width: 90px;
+
+    border-radius: 4px;
+    border: 1px solid var(--primary-color-btn);
+
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &.hover-none {
+        &:hover {
+            transform: none;
+            box-shadow: none;
+        }
+    }
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    &.rounded {
+        border-radius: 999px;
+    }
+
+    &.line {
+        background-color: transparent;
+        border: 1px solid var(--primary-color-btn);
+    }
+
+    &.solid {
+        color: #fff;
+        background-color: var(--primary-color-btn);
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: rgba(253, 253, 253, 0.16) 0px 1px 4px;
+        }
+    }
+}

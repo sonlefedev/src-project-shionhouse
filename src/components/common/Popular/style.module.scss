@@ -1,0 +1,86 @@
+.popular-wrapper {
+    padding-top: 50px;
+
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        margin: 0 -6px;
+        .wrapper-item {
+            @media (max-width: 1167px) {
+                width: calc(100% / 3);
+            }
+            @media (max-width: 768px) {
+                width: 50%;
+            }
+            @media (max-width: 548px) {
+                width: 100%;
+            }
+            width: 25%;
+            padding: 6px;
+            .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                max-height: 443px;
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    transition: all 0.3s linear;
+                }
+                .navigate {
+                    top: calc(50% - 10px);
+                    opacity: 0;
+                    pointer-events: none;
+                    min-width: 157px;
+
+                    left: 50%;
+                    position: absolute;
+                    z-index: 1;
+
+                    transform: translateX(-50%) translateY(-50%);
+                    transition: all 0.3s linear;
+                    // animation: appear_from_the_top .3s;
+                }
+                &:hover img {
+                    transform: scale(1.1);
+                }
+                &:hover .title {
+                    transform: translateY(0);
+                }
+                &:hover .navigate {
+                    top: 50%;
+                    opacity: 1;
+                    pointer-events: visible;
+                }
+                .title {
+                    transform: translateY(100%);
+                    z-index: 1;
+                    position: absolute;
+                    bottom: 0;
+                    color: #fff;
+                    width: 100%;
+
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    p {
+                        color: #fff;
+                        background: rgba(29, 37, 71, 0.5);
+                        padding: 20px 0;
+                        display: block;
+                        cursor: pointer;
+                        font-size: 30px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        font-family: 'Cinzel', serif;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

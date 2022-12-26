@@ -1,0 +1,21 @@
+.wp-layer-overlaps {
+    --background_color: #000;
+
+    background-color: var(--background_color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 9999;
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition: all 0.2s linear;
+    &.display {
+        pointer-events: visible;
+        opacity: 1;
+    }
+}

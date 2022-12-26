@@ -1,0 +1,14 @@
+.wrapper-navigation-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .prev,
+    .next {
+        @media (max-width: 620px) {
+            width: 100%;
+        }
+        width: 50%;
+    }
+}

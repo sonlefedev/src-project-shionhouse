@@ -1,0 +1,94 @@
+.wrapper-footer {
+    .footer-bottom,
+    .footer-area {
+        background-color: #1d2547;
+    }
+
+    .footer-area {
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 100px 10px 50px;
+        .footer-caption {
+            padding: 0 20px;
+
+            width: calc(100% / 5);
+            min-width: 235px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            &.item-footer {
+                > h4 {
+                    font-size: 17px;
+                    margin-bottom: 40px;
+                    font-weight: 500;
+                    font-family: 'Poppins', sans-serif;
+                    color: #fff;
+                }
+
+                > ul {
+                    > li {
+                        margin-bottom: 15px;
+                        > a {
+                            color: #c2c5db;
+                            font-weight: 300;
+                            font-size: 14px;
+                            text-decoration: none;
+                            transition: all 0.2s linear;
+
+                            &:hover {
+                                color: var(--primary-color);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                a.link {
+                    color: #c2c5db;
+                }
+            }
+            .footer-logo {
+                margin-bottom: 35px;
+                img {
+                }
+            }
+            > p {
+                margin-bottom: 50px;
+                color: #c2c5db;
+                font-size: 14px;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-bottom: 20px;
+        > p {
+            padding: 0 20px;
+            text-align: center;
+        }
+        p,
+        a {
+            color: #c2c5db;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 12px;
+        }
+        a {
+            color: var(--primary-color);
+            margin: 0 4px;
+        }
+        .icon {
+            margin: 0 4px;
+            transform: translateY(2px);
+            color: var(--primary-color);
+        }
+    }
+}

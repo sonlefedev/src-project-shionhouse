@@ -1,0 +1,29 @@
+.smallTitle {
+    font-size: 2rem;
+
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.wrapper-list-thumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    > li {
+        width: 50%;
+        padding: 0 15px;
+        img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.wrapper-map {
+    &,
+    > img {
+        width: 100%;
+        border-radius: 6px;
+    }
+}

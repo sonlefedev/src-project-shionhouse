@@ -1,0 +1,32 @@
+.list-item-category {
+    > li {
+        border-bottom: 1px solid #f0e9ff;
+        transition: all 0.3s ease 0s;
+        padding: 12px 0;
+        &:hover {
+            transform: translateX(4px);
+        }
+
+        &:first-child {
+            padding-top: 0;
+        }
+        > a {
+            display: flex;
+            font-size: 14px;
+            line-height: 20px;
+            color: #888;
+
+            &:hover > p {
+                color: var(--primary-color);
+            }
+
+            > p {
+                transition: 0.4s;
+                margin-bottom: 0px;
+                &:nth-child(2) {
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+}

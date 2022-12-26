@@ -1,0 +1,31 @@
+.social {
+    --color-icon-social-hover: var(--primary-color);
+    --color-border-social: var(--primary-alpha-color);
+    --background-hover: transparent;
+
+    transition: all 0.2s linear;
+
+    .link-social {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        border-radius: 50%;
+        border: 1px solid var(--color-border-social);
+        font-size: 14px;
+
+        color: var(--color-border-social), var(--primary-alpha-color);
+
+        &:hover > .icon {
+            transform: rotateY(180deg);
+            color: var(--color-icon-social-hover);
+        }
+        &:hover {
+            background-color: var(--background-hover);
+        }
+    }
+
+    &,
+    .icon {
+        transition: all 0.3s linear;
+    }
+}
